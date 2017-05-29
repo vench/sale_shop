@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "83fef1fd10e9058cbc677819e10163bf",
+    "content-hash": "d62ae654a9ed3277c81cfed9e9fe7ad5",
+    "packages": [
+        {
+            "name": "vench/venus-fw",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vench/venus-fw.git",
+                "reference": "2dfa5ff1aacc146819b356d58bdefcbee51005d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vench/venus-fw/zipball/2dfa5ff1aacc146819b356d58bdefcbee51005d0",
+                "reference": "2dfa5ff1aacc146819b356d58bdefcbee51005d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vench-master",
+                    "email": "nowwrit@mail.ru",
+                    "homepage": "http://vench-master.spb.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple framework PHP",
+            "keywords": [
+                "mvc",
+                "simple framework"
+            ],
+            "time": "2017-05-05 14:29:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "vench/venus-fw": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

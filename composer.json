@@ -1,0 +1,13 @@
+{
+    "name": "vendor/sale-shop",
+    "description": "Описание проекта sale_shop.",
+    "authors": [
+        {
+            "name": "vench",
+            "email": "nowwrit@mail.ru"
+        }
+    ],
+    "require": {
+        "vench/venus-fw": "dev-master"
+    }
+}
