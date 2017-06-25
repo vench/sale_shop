@@ -1,13 +1,13 @@
 {
-    "name": "vendor/sale-shop",
-    "description": "Описание проекта sale_shop.",
+    "name": "jetbrains/phpstorm-workshop",
+    "description": "Materials for the PhpStorm workshop. Check https://github.com/jetbrains/phpstorm-workshop/ for more info.",
+    "minimum-stability": "dev",
+    "license": "Apache-2.0",
+    "type": "project",
     "authors": [
         {
-            "name": "vench",
-            "email": "nowwrit@mail.ru"
+            "name": "Maksim Kolmakov",
+            "email": "maxim.kolmakov@jetbrains.com"
         }
-    ],
-    "require": {
-        "vench/venus-fw": "dev-master"
-    }
+    ]
 }

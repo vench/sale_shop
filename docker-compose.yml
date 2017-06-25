@@ -1,18 +1,30 @@
-web:
-    image: nginx:latest
-    ports: 
-        - "8001:80"
-    volumes: 
-        - ./:/code
+version: '2'
+
+
+
+services:
+  web:
+      image: nginx:latest
+      ports:
+        - "8081:80"
+      volumes:
+        - ./:/var/www/html
         - ./site.conf:/etc/nginx/conf.d/default.conf
-    links:
-        -   php
-php:
-    image: php:7-fpm
-        
-    volumes: 
-        - ./:/code 
-        
-        
-        
-    
+      environment:
+        #change the line below with your IP address that is visible from Docker
+        #See README for instruction about how to get the right IP address
+          XDEBUG_CONFIG: remote_host=<your_ip_address>
+      links:
+          -   php
+  php:
+      image: php:7-fpm
+
+      volumes:
+          - ./:/var/www/html
+
+  mysql:
+      image: phpstorm/mysql
+      ports:
+        - "33056:3306"
+      volumes:
+        - ./data:/var/lib/mysql
