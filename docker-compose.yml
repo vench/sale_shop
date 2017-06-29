@@ -8,6 +8,8 @@ services:
        image: busybox:latest
        volumes:
          - ./:/var/www/html
+       
+
 
   web:
       image: nginx:latest
@@ -31,8 +33,21 @@ services:
 
 
   mysql:
-      image: phpstorm/mysql
+      image: mysql
       ports:
         - "33056:3306"
       volumes:
         - ./data:/var/lib/mysql
+
+      environment:
+        MYSQL_ROOT_PASSWORD: 123456
+        MYSQL_USER: dev
+        MYSQL_PASSWORD: 123456
+        MYSQL_DATABASE: myapp
+
+  cmdl:
+     build: ./docker/cmd
+     volumes_from:
+        - shared 
+     links:
+        - shared
